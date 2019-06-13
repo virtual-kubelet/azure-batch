@@ -1,6 +1,6 @@
 # Kubernetes Virtual Kubelet with Azure Batch
 
-[Azure Batch](https://docs.microsoft.com/en-us/azure/batch/) provides a HPC Computing environment in Azure for distributed tasks. Azure Batch handles scheduling of discrete jobs and tasks accross pools of VM's. It is commonly used for batch processing tasks such as rendering.
+[Azure Batch](https://docs.microsoft.com/en-us/azure/batch/) provides a HPC Computing environment in Azure for distributed tasks. Azure Batch handles scheduling of discrete jobs and tasks across pools of VM's. It is commonly used for batch processing tasks such as rendering.
 
 The Virtual kubelet integration allows you to take advantage of this from within Kubernetes. The primary usecase for the provider is to make it easy to use GPU based workload from normal Kubernetes clusters. For example, creating Kubernetes Jobs which train or execute ML models using Nvidia GPU's or using FFMPEG.
 
@@ -10,7 +10,7 @@ __The [ACI provider](../azure/README.md) is the best option unless you're lookin
 
 ## Status: Experimental
 
-This provider is currently in the exterimental stages. Contributions welcome!
+This provider is currently in the experimental stages. Contributions welcome!
 
 ## Quick Start
 
@@ -21,7 +21,7 @@ The following Terraform template deploys an AKS cluster with the Virtual Kubelet
 3. Download the latest version of the Community Kubernetes Provider for Terraform. Get the correct link [from here](https://github.com/sl1pm4t/terraform-provider-kubernetes/releases) and use it as follows: (Current official Terraform K8s provider doesn't support `Deployments`)
 
 ```shell
-curl -L -o - PUT_RELASE_BINARY_LINK_YOU_FOUND_HERE | gunzip > terraform-provider-kubernetes
+curl -L -o - PUT_RELEASE_BINARY_LINK_YOU_FOUND_HERE | gunzip > terraform-provider-kubernetes
 chmod +x ./terraform-provider-kubernetes
 ```
 
@@ -46,9 +46,9 @@ You can update [main.tf](./main.tf) to increase the number of nodes allocated to
 
 ## Advanced Setup
 
-## Prerequistes
+## Prerequisites
 
-1. An Azure Batch Account configurated
+1. An Azure Batch Account configured
 2. An Azure Batch Pool created with necessary VM spec. VM's in the pool must have:
     - `docker` installed and correctly configured
     - `nvidia-docker` and `cuda` drivers installed
