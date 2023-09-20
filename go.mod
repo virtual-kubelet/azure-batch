@@ -40,9 +40,9 @@ require (
 	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4 // indirect
 	google.golang.org/appengine v1.5.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	k8s.io/api v0.0.0-20190612125737-db0771252981
-	k8s.io/apimachinery v0.0.0-20190612125636-6a5db36e93ad
-	k8s.io/apiserver v0.0.0-20190612130503-88b97c97967f // indirect
+	k8s.io/api v0.15.10
+	k8s.io/apimachinery v0.15.10
+	k8s.io/apiserver v0.15.10 // indirect
 	k8s.io/client-go v11.0.0+incompatible
 	k8s.io/klog v0.3.3
 	k8s.io/kubernetes v1.14.3 // indirect
